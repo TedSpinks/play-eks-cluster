@@ -40,7 +40,7 @@ In the AWS console, create an IAM user to use for Terraform.
 1. Click on the **Security credentials** tab ![iam](images/06-creds-2.png)
 1. Click **Create access key** ![iam](images/07-creds-3.png)
 1. Choose **Other** and click **Next** ![iam](images/08-creds-4.png)
-1. Finish creating the access key, and be sure to save the 3 resulting values. We'll need them for the next step.
+1. Finish creating the access key, and be sure to save the 3 resulting values somewhere safe. We'll need them for the next step.
 ```shell
 AWS_ACCESS_KEY_ID: Your AWS access key ID.
 AWS_SECRET_ACCESS_KEY: Your AWS secret access key.
@@ -49,7 +49,7 @@ AWS_REGION: Your AWS region.
 
 ## 3. Configure the AWS CLI.
 
-Configure the AWS ClI, entering the 3 access key values when prompted.
+Configure the AWS CLI, entering the 3 access key values when prompted.
 ```shell
 aws configure
 ```
@@ -67,4 +67,4 @@ It should give results similar to this:
     "Arn": "arn:aws:iam::222222222:user/play-eks"
 }
 ```
-The `Arn` should refer the IAM account you previously created. If you get an error, run `aws configure` again, and double check that ***all 3*** values are correct.
+The `Arn` should refer the IAM account you previously created. If you get an error, run `aws configure` again, and double check that ***all 3*** values match the values you saved when creating the access key.
