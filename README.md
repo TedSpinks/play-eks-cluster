@@ -74,7 +74,7 @@ aws eks update-kubeconfig --name ted1 --region us-east-2
 
 #### 5. Connect to the Hello World app
 
-Use `kubectl` to get the DNS name of our Hello World app.
+Use `kubectl` to get the DNS name of the Hello World app.
 ```shell
 kubectl get svc hello-world-app
 ```
@@ -87,6 +87,8 @@ hello-world-app  LoadBalancer  172.20.74.137  acf43e748sdd5fde2e5f-8145582.us-ea
 
 In your browser's URL bar, enter the `EXTERNAL-IP`.
 ![hello-world-app](docs/images/hello-world-app.png)
+
+Be sure to **KEEP** the local clone of this Git repo. The `terraform apply` command created hidden files that are **REQUIRED** in order to [clean up the cluster(s)](#clean-up-your-clusters) when you're done.
 
 # Create more Clusters
 
@@ -106,6 +108,8 @@ module "eks_cluster_ted2" {
 ```
 
 Repeat [steps 3](#3-create-the-cluster-with-terraform-commands) through 5 above to create the new cluster and connect to its Hello World app.
+
+Be sure to **KEEP** the local clone of this Git repo. The `terraform apply` command created hidden files that are **REQUIRED** in order to [clean up the cluster(s)](#clean-up-your-clusters) when you're done.
 
 # Clean Up Your Clusters
 
