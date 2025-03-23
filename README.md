@@ -20,8 +20,10 @@ Before creating your EKS cluster in AWS, you'll need the following.
 1. An AWS account. If you don't already have one, you'll just need a credit card, and you can follow [these quick steps](https://aws.amazon.com/resources/create-account/).
 1. The AWS CLI installed on your computer - follow [these steps](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) for your OS.
 1. The AWS CLI should be configured with administrator-level credentials to your AWS account.
-  1. Check whether your AWS CLI is already configured: `aws sts get-caller-identity`
-  1. If it is not configured, or if you're not sure whether or not the creds are **administrator**-level, follow [these steps](docs/aws-credentials.md)
+
+Check whether your AWS CLI is already configured: `aws sts get-caller-identity`
+
+If it is not configured, or if you're not sure whether or not the creds are **administrator**-level, follow [these steps](docs/aws-credentials.md)
 
 # Create Your First Cluster
 
