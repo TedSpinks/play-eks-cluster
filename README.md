@@ -21,9 +21,9 @@ Before creating your EKS cluster in AWS, you'll need the following.
 1. The AWS CLI installed on your computer - follow [these steps](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) for your OS.
 1. The AWS CLI should be configured with administrator-level credentials to your AWS account.
 
-Check whether your AWS CLI is already configured: `aws sts get-caller-identity`
+To check if your AWS CLI is already configured: `aws sts get-caller-identity`
 
-If it is not configured, or if you're not sure whether or not the creds are **administrator**-level, follow [these steps](docs/aws-credentials.md)
+If it's not configured, or if you're not sure whether or not the creds are **administrator**-level, follow [these steps](docs/aws-credentials.md)
 
 # Create Your First Cluster
 
@@ -63,7 +63,7 @@ It should run for 15 or so minutes. When Terraform completes it should say somet
 ```
 Apply complete! Resources: 60 added, 0 changed, 0 destroyed.
 ```
-Your cluster is ready!
+If there are errors, double check the credentials in your AWS CLI - they must be **administrator**-level. 
 
 #### 4. Connect to your cluster
 
